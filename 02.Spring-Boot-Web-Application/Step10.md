@@ -10,7 +10,7 @@
 
 Snippet -  /src/main/java/com/in28minutes/springboot/web/model/Todo.java
 ```
-package com.in28minutes.springboot.web.model;
+package com.in28minutes.springboot.web.springbootfirstwebappilcation.model;
 
 import java.util.Date;
 
