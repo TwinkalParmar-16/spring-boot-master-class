@@ -109,7 +109,7 @@ public class Todo {
 
 Snippet - /src/main/java/com/in28minutes/springboot/web/service/TodoService.java
 ```
-package com.in28minutes.springboot.web.service;
+package com.in28minutes.springboot.web.springbootfirstwebappilcation.service;
 
 import java.util.ArrayList;
 import java.util.Date;
