@@ -56,7 +56,7 @@
 ```
 ### src/main/java/com/in28minutes/springboot/Application.java
 ```
-package com.in28minutes.springboot;
+package com.twinkal.springboot;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
