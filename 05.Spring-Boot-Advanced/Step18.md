@@ -28,6 +28,15 @@ First Snippet - Add H2 Later after showing the error
         </dependency>
 
 ```
+
+```
+RECOMMENDED: 
+
+Make the database URL a constant by configuring this in application.properties.
+
+spring.datasource.url=jdbc:h2:mem:testdb
+spring.data.jpa.repositories.bootstrap-mode=default
+```
 Second Snippet
 ```
 package com.in28minutes.springboot.jpa;
