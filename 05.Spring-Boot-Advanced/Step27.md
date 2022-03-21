@@ -57,6 +57,25 @@ Third Snippet
 @WebMvcTest(value = SurveyController.class)
 @WithMockUser
 //OLD CODE - @WebMvcTest(value = SurveyController.class, secure = false)
+
+Spring Boot 2.2.0.RELEASE+ 
+
+@WebMvcTest(value = SurveyController.class, secure = false)
+
+secure=false is deprecated.
+
+Instead, you would need to use @WithMockUser
+
+
+
+Add this to pom.xml
+
+ <dependency>    
+    <groupId>org.springframework.security</groupId>    
+    <artifactId>spring-security-test</artifactId>    
+    <scope>test</scope>
+</dependency>
+
 ```
 ## Files List
 ### pom.xml
