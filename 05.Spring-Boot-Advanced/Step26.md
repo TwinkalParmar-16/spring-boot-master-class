@@ -18,6 +18,11 @@ Second Snippet
 Using default security password:
 ```
 
+```
+auth.inMemoryAuthentication().passwordEncoder(org.springframework.security.crypto.password.NoOpPasswordEncoder.getInstance()).withUser("user1").password("secret1")			.roles("USER").and().withUser("admin1").password("secret1")
+				.roles("USER", "ADMIN");
+```
+
 Third Snippet : Executing a GET to http://localhost:8080/surveys/Survey1/questions/
 ```
 {
