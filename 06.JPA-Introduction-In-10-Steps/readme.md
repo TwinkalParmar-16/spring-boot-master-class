@@ -5,6 +5,14 @@
 - Step 3 : Introduction to JPA
 - Step 4 : Creating a JPA Project using Spring Initializr
 - Step 5 : Defining a JPA Entity - User
+```
+	RECOMMENDED: 
+
+Make the database URL a constant by configuring this in application.properties.
+
+spring.datasource.url=jdbc:h2:mem:testdb
+spring.data.jpa.repositories.bootstrap-mode=default
+```
 - Step 6 : Defining a Service to manage the Entity - UserService and EntityManager
 - Step 7 : Using a Command Line Runner to save the User to database.
 - Step 8 : Magic of Spring Boot and In Memory Database H2
