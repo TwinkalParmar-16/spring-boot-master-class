@@ -19,6 +19,17 @@ If you face problems in next lectures and you are using a recent version of Spri
 deleteTodo - Use repository.deleteById(id); instead of repository.delete(id);
 
 showUpdateTodoPage - Use Todo todo = repository.findById(id).get(); instead of Todo todo = repository.findOne(id);
+
+Summary
+If you are using Spring Boot 2.5.0 or Greater, you have two options
+
+1) Use schema.sql instead of data.sql  OR
+
+2) Continue using data.sql. Add the following property to application.properties
+
+spring.jpa.defer-datasource-initialization=true
+
+
 ```
 - Step 6 : Defining a Service to manage the Entity - UserService and EntityManager
 - Step 7 : Using a Command Line Runner to save the User to database.
