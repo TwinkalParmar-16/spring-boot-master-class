@@ -12,6 +12,13 @@ Make the database URL a constant by configuring this in application.properties.
 
 spring.datasource.url=jdbc:h2:mem:testdb
 spring.data.jpa.repositories.bootstrap-mode=default
+
+
+If you face problems in next lectures and you are using a recent version of Spring Boot:
+
+deleteTodo - Use repository.deleteById(id); instead of repository.delete(id);
+
+showUpdateTodoPage - Use Todo todo = repository.findById(id).get(); instead of Todo todo = repository.findOne(id);
 ```
 - Step 6 : Defining a Service to manage the Entity - UserService and EntityManager
 - Step 7 : Using a Command Line Runner to save the User to database.
